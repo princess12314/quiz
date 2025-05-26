@@ -60,9 +60,6 @@ class employeecontroller extends Controller
             }
     }
 
-    public function destroy(int $id){
-        $employees = employee::findOrFail($id);
-        $employees->delete();
-        return redirect ()->back()->with('status','Employee Deleted');
-    }
+   
+    
 }
